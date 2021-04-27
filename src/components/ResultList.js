@@ -9,14 +9,14 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Container from '@material-ui/core/Container';
 import Pagination from '@material-ui/lab/Pagination';
-import './results.scss';
+import './ResultList.scss';
 
 export default function ResultList(props) {
 
   return (
     <div>
       {props.data.items && (
-      <Container>
+      <Container className="results">
         <TableContainer component={Paper}>
           <Table aria-label="simple table">
             <TableHead>
